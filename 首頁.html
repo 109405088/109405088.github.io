@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>占新實錄</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+    header {
+      text-align: center;
+      padding: 1.5rem;
+      line-height: 0.5;
+    }
+    header h1 {
+      color: #ff6600;
+      font-size: 4rem;
+    }
+    header p {
+      color:white;
+      font-size: 1.5rem;
+      margin-top: 0.2rem;
+    }
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 0.5rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .profile-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    .profile img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 0.5rem;
+    }
+    .profile h2 {
+      color: #f90;
+      margin: 1rem 0;
+      text-align: center;
+      line-height: 0.3;
+    }
+    .profile-description {
+      max-width: 600px;
+      text-align: center;
+    }
+    .tags {
+      color: #ff9900;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      line-height: 0.3;
+    }
+    .menu {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0 3rem 0;
+    }
+    .menu button {
+      border: 2px solid #ff9900;
+      background: rgba(255, 255, 255, 0.8);
+      color: #ff9900;
+      padding: 0.5rem 1.5rem;
+      margin: 0 0.6rem;
+      border-radius: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .menu button:hover {
+      background-color: #ff9900;
+      color: white;
+      border-color: #ff9900;
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .section-box {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 0.5rem;
+      padding: 1rem 2rem 1.5rem 2rem;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 5rem auto 0 auto;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem; /* ⬅️ 字再大一點 */
+      font-weight: bold;
+      color: #ff6600;
+      margin: 3rem auto 1.5rem auto;  /* ⬅️ 往下移一點 */
+      gap: 0.6rem;}
+
+    .section-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      vertical-align: middle;
+    }
+
+    .news-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 4rem auto 2rem auto;
+      padding: 1rem;
+      max-width: 1200px;
+    }
+
+    .news-card {
+      text-decoration: none !important;
+      color: inherit !important;
+      width: 23%;
+      min-width: 260px;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      background-color: #fff;
+      overflow: hidden;
+      transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .news-card h3 {
+      margin: 1rem 1rem 0.5rem 1rem;
+      color: #ff6600 !important;
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: none !important;
+    }
+
+    .news-card p {
+      margin: 0 1rem 1rem 1rem;
+      font-size: 0.95rem;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -100;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="海浪影片.mp4" type="video/mp4">
+  </video>
+
+  <header>
+    <h1>占新實錄</h1>
+    <p>解讀新象，掌握先機</p>
+  </header>
+
+  <section class="profile">
+    <div class="profile-header">
+      <img src="IMG_0665.JPG" alt="蔡文馨" />
+      <h2>蔡文馨</h2>
+    </div>
+    <div class="profile-description">
+      <div class="tags">#黑眼圈 #怪 #像個直男 #INFP #貓頭鷹</div>
+      <p>土生土長澎湖人，政治大學新聞系畢業。</p>
+      <p>曾任政大之聲實習電台主持人、《大學線》學生記者、《政大人》校訊記者，<br>喜愛廣播、文字、攝影，特別關注教育、文化及人權議題。</p>
+    </div>
+  </section>
+
+  <div class="menu">
+    <button onclick="showTopic()">
+      <img src="newspaper.png" alt="報紙圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">專題
+    </button>
+    <button><img src="大聲公.png" alt="新聞圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">新聞</button>
+    <button><img src="廣播.png" alt="廣播圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">廣播</button>
+    <button><img src="攝影.png" alt="圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">攝影</button>
+  </div>
+
+  <!-- 專題區塊初始隱藏 -->
+  <div id="section-topic" class="section-box" style="display: none;">
+    <div class="section-title">
+      <img src="newspaper.png" alt="報紙圖示" class="section-icon">
+      <span>專題</span>
+    </div>
+
+  <div class="news-section">
+    <a href="/Users/wen-shintsai/Desktop/wenshin's website/拒學.html" target="_blank" class="news-card">
+      <img src="拒學.png" alt="新聞圖片1">
+      <h3>接住無法踏進校園的孩子：如何陪伴拒學生走出陰霾？</h3>
+      <p>「拒學的問題是需要被關注的，若沒有即時處理，慢慢演變成其他的精神疾病，可能會有遺憾發生。」孩子的拒學現象刻不容緩，但拒學生對於許多師長而言仍相當陌生，在尋求資源與他人理解的路上面臨重重困難⋯⋯</p>
+    </a>
+      <a href="/Users/wen-shintsai/Desktop/wenshin's website/拒學2.html" target="_blank" class="news-card">
+      <img src="拒學2.jpg" alt="新聞圖片2">
+      <h3>接住無法踏進校園的孩子：如何陪伴拒學生走出陰霾？</h3>
+      <p>「學校對我來說就像是監獄。」17歲的Haci（化名），形容著國二到國三那段日子。只要接近學校，就會出現身體不適、無法控制情緒的症狀，看似是孩子氣的無理取鬧，但事實上，這是「拒學症」初期的典型狀態⋯⋯</p>
+    </a>
+      <a href="/Users/wen-shintsai/Desktop/wenshin's website/tiktok.html" target="_blank" class="news-card">
+      <img src="抖音.jpg" alt="新聞圖片3">
+      <h3>當TikTok成新時代兒童台<br>該擁抱還是抵制？</h3>
+      <p>「點選15秒的錄製時長，面對著鏡頭，搭配時下最紅的「抖音舞曲」，隨著音樂扭腰擺臀，殷切期待著同儕間的互動與關注⋯⋯這是12歲的小魚（化名）放學後的日常，也是現今許多兒童課餘的閒暇娛樂。</p>
+    </a>
+      <a href="/Users/wen-shintsai/Desktop/wenshin's website/文健站.html" target="_blank" class="news-card">
+      <img src="文健站.jpg" alt="新聞圖片4">
+      <h3>守護原民長者的家：<br>如何延續文健站的光？</h3>
+      <p>「來這裡都喜歡啦！像是我們的故鄉。」楊玉樹形容「文化健康站」。二十多年前，來自台東排灣族的楊玉樹，為了工作與丈夫移居到台中，從永春文健站籌備到正式成立的三年間，不時可以看到他⋯⋯</p>
+    </a>
+    </div>
+  </div>
+  <script>
+    function showTopic() {
+      const topic = document.getElementById("section-topic");
+      topic.style.display = "block";
+
+      setTimeout(() => {
+        topic.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }, 100);
+    }
+  </script>
+</body>
+</html>
