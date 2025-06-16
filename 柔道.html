@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【體育新聞】越級挑戰66KG　林崇佑全勝奪中正盃柔道冠軍</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", sans-serif;
+      line-height: 1.8;
+      background-color: #fff;
+      color: #222;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background-color: #ffa856;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+    }
+    header h1 {
+      color: #fff;
+      font-size:2rem;
+      margin: 0;
+    }
+    .menu {
+      display: flex;
+      gap: 1.2rem;
+    }
+    .menu button {
+      background-color: #fff;
+      color: #f90;
+      border: 2px solid #f90;
+      padding: 0.6rem 1.4rem;
+      border-radius: 999px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .hero {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero img {
+      width: 80%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      object-fit: contain;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-text {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: white;
+      font-size: 2.2rem;
+      font-weight: bold;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+      width: 80%;
+    }
+    .hero-badge {
+     position: absolute;
+     top: 2.5rem;  /* 已向下調整距離 */
+     right: 1rem;
+     background-color: #fff;
+     color: #f90;
+     font-weight: bold;
+     font-size: 0.85rem;
+     padding: 0.4rem 1rem;
+     border-radius: 999px;
+     box-shadow: 0 0 5px rgba(0,0,0,0.2);
+     z-index: 3;
+     transition: all 0.3s ease;
+     cursor: pointer;
+     }
+
+     .hero-badge:hover {
+     background-color: #f90;
+     color: #fff;
+     transform: scale(1.05);
+     }
+     .content {
+     max-width: 750px;
+     margin: 2rem auto;
+     padding: 0 1.5rem;
+     }
+    h2 {
+      color:#f90;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;}
+     p {margin-bottom: 1.2rem; }
+
+     .hero {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;}
+        
+     .hero-tag {
+     position: absolute;
+     top: 1rem;
+     left: calc(10% + 1rem);  /* 避免圖片偏移 */
+     background-color: #ff6600;
+     color: white;
+     display: flex;
+     align-items: center;
+     gap: 0.3rem;
+     padding: 0.4rem 0.8rem;
+     border-radius: 0.4rem;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+     z-index: 3;}
+            
+     .hero-tag img {
+     width: 1.2rem;   /* ✅ 控制 icon 尺寸 */
+     height: 1.2rem;
+     object-fit: contain}
+
+     .content figure img {
+        width: 100%;
+        height: 300px;        /* ✅ 內文圖保持固定高度 */
+        object-fit: cover;    /* ✅ 填滿容器，自動裁切 */
+        border-radius: 0.3rem;
+        display: block;}
+
+     .content figure img {
+        width: 100%;
+        height: 300px;           /* ✅ 固定高度，可依需要調整 */
+        object-fit: cover;       /* ✅ 自動裁切圖片以填滿容器 */
+        border-radius: 0.3rem;
+        display: block;}
+     
+     .hero-tag {
+     position: absolute;
+     top: 1rem;
+     left: calc(10% + 1rem);
+     background-color: #ff6600;
+     color: white;
+     display: flex;
+     align-items: center;
+     gap: 0.3rem;
+     padding: 0.4rem 0.8rem;
+     border-radius: 0.4rem;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+     z-index: 3;
+     transition: all 0.3s ease;   /* 加入平滑動畫 */
+     cursor: pointer;}
+     
+     .hero-tag img {
+        width: 1.2rem;
+        height: 1.2rem;
+        object-fit: contain;}
+
+/* ✅ Hover 效果：加深背景、放大、加陰影 */
+   .hero-tag:hover {
+    background-color: #cc5200;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);}
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <a href="https://109405088.github.io/%E9%A6%96%E9%A0%81.html" 
+         style="text-decoration: none; color: white;">
+        <h1 style="margin: 0;">馨之所向✨</h1>
+      </a>
+    </div> 
+    <div class="menu">
+        <button onclick="showTopic()">
+          <img src="newspaper.png" alt="報紙圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">專題
+        </button>
+        <button><img src="大聲公.png" alt="新聞圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">新聞</button>
+        <button><img src="廣播.png" alt="廣播圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">廣播</button>
+        <button><img src="攝影.png" alt="圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">攝影</button>
+      </div>
+  </header>
+  <section class="hero">
+    <div class="hero-tag">
+    <img src="體育.png" alt="體育圖示" ><span>體育</span></div>
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/11/411a78b6ede7bce165991a32637e3d62-scaled.jpg" alt="田徑封面" class="hero-img">
+</section>  
+<div style="text-align: center; font-weight: bold; font-size: 2.5rem; margin: 1.5rem auto 1rem auto; width: 80%;">
+    越級挑戰66KG<br>林崇佑全勝奪中正盃柔道冠軍
+</div>
+<section class="content">
+  <div class="meta" style="text-align: center; margin-top: -0.5rem;">
+    2022-11-16｜記者蔡文馨台中報導
+</div>
+<p>「Ippon！」四分鐘時間快速倒數，國立臺東大學林崇佑最終在1分40秒，以「足技」壓制同校學弟林彥呈獲得勝利。111年全國中正盃柔道錦標賽於12日至13日在臺中市立中港高級中學綜合體育館展開，社會男子組第二級（66KG量級）最終由首次參戰的林崇佑以五連勝之姿摘下冠軍。</p>
+<figure style="margin-top: 2rem;">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/11/9a3930fa53b4d7304e7bf9fe31a5766b-scaled.jpg" style="width: 100%;height: auto;border-radius: 0.3rem;display: block;">
+    <figcaption style="font-size: 0.9rem; color: #555; margin-top: 0.5rem; text-align: center;">
+        在冠亞賽中，林崇佑對上同樣來自國立臺東大學的學弟林彥呈，兩人皆在國訓中心一同訓練，因此十分了解對方的策略，林崇佑坦言學弟此次狀況不佳，後續會教導他，持續精進。圖／蔡文馨 攝</figure></figcaption>
+<p>111年上半年度全國精英排名賽青少年組60KG排名第一的林崇佑，於本次中正盃越級挑戰社男甲組66KG個人賽，林崇佑雖在此量級較其他選手瘦小，卻將其轉為自身優勢，屢次靈活化解對手攻勢。以八強賽為例，在與來自臺北市立大學的對手潘思翰陷入僵持時，林崇佑藉由不斷移動迴避攻擊，最終看準時機緊抱潘思翰使其無法出手，以「Ippon！」順利躋身四強。除此之外，氣勢也是他取勝的關鍵，「我不想讓選手覺得我處在劣勢，所以盡量展現強勢的一面，讓對方害怕而不敢進攻。」</p>
+<p>自小於單親家庭成長的林崇佑，在場上對柔道充滿企圖心，場下則十分孝順。林崇佑此次賽事不僅特地安排爺爺奶奶到場觀看，奪冠後的頒獎典禮上更時刻掛念著與家人合照。對此，他靦腆地說：「因為他們年紀大了，所以更珍惜他們可以來看我每場比賽的機會。」並進一步點出家人的肯定與支持是他持續精進的動力。」</p>
+<figure style="margin-top: 2rem;">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/11/25b2916b5c49db617f52fa5ea48efee7-1-scaled.jpg" style="width: 100%;height: auto;border-radius: 0.3rem;display: block;">
+    <figcaption style="font-size: 0.9rem; color: #555; margin-top: 0.5rem; text-align: center;">
+        從小由奶奶帶大的林崇佑，十分把握每次國內比賽家人能前來觀賽的機會，賽後奪冠也不忘與遠到的家人們合影，更在合影完後將獎牌交由奶奶保管。圖／蔡文馨 攝</figure></figcaption>
+ <figure style="margin-top: 2rem;">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/11/eccbc87e4b5ce2fe28308fd9f2a7baf3-5-scaled.jpg" style="width: 100%;height: auto;border-radius: 0.3rem;display: block;">
+    <figcaption style="font-size: 0.9rem; color: #555; margin-top: 0.5rem; text-align: center;">
+        來自台北市立大學的許竣凱，在今年度全國男子菁英排名賽青年組60KG量級，排名僅次於林崇佑，而在今年度全國柔道錦標賽更榮獲社會男子甲組60KG冠軍。圖／蔡文馨 攝</figure></figcaption>
+<p>除了林崇佑外，在今年度國內菁英排名青年組60KG緊隨其後的臺北市立大學許竣凱也備受矚目。許竣凱在男子組60KG量級四強戰中，對上同校學長羅安，雖然彼此相當熟悉，卻因未預料到羅安使出的「左邊內腿大內刈」而慘遭扳倒，止步四強，僅以第三名作結。對於本次賽事，許竣凱認為，自身力量調節與技巧變化等方面仍須進步，但依舊肯定自己有將練習成果充分運用在賽場。</p>
+<p>本年度國內柔道賽事已進入尾聲，許竣凱給今年的自己打下「80分」，而北市大柔道教練王沁芳則期待許峻凱未來能成為台灣柔道之光楊勇緯的接班人。而同樣將楊勇緯看作目標的林崇佑，對於今年曾代表國家征戰蒙古及羅馬尼亞的經驗十分滿意，「藉由參加國際賽，和各國選手競爭，我在心態和技巧上都提升很多。」並期望有朝一日能踏上奧運殿堂拿下冠軍。</p>
+<figure style="margin-top: 2rem;">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/11/6bb61e3b7bce0931da574d19d1d82c88-scaled.jpg" style="width: 100%;height: auto;border-radius: 0.3rem;display: block;">
+    <figcaption style="font-size: 0.9rem; color: #555; margin-top: 0.5rem; text-align: center;">
+        許竣凱在國小因跑步很快而被老師找去參加柔道社團，進而引發他對於柔道的興趣，便於國小一路到高中皆為柔道校隊，更曾在2019年「阿拉木圖世界青少年柔道錦標賽」榮獲第五名。圖／蔡文馨 攝</figure></figcaption>
+</section>
