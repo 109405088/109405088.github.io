@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【影音報導】漫漫創生路，何創何生？</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", sans-serif;
+      line-height: 1.8;
+      background-color: #ffffff;
+      color: #222;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background-color: #ffa856;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+    }
+    header h1 {
+      color: #fff;
+      font-size:2rem;
+      margin: 0;
+    }
+    .menu {
+      display: flex;
+      gap: 1.2rem;
+    }
+    .menu button {
+      background-color: #fff;
+      color: #f90;
+      border: 2px solid #f90;
+      padding: 0.6rem 1.4rem;
+      border-radius: 999px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .hero {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero img {
+      width: 80%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      object-fit: contain;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-text {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: white;
+      font-size: 2.2rem;
+      font-weight: bold;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+      width: 80%;
+    }
+    .hero-badge {
+     position: absolute;
+     top: 2.5rem;  /* 已向下調整距離 */
+     right: 1rem;
+     background-color: #fff;
+     color: #f90;
+     font-weight: bold;
+     font-size: 0.85rem;
+     padding: 0.4rem 1rem;
+     border-radius: 999px;
+     box-shadow: 0 0 5px rgba(0,0,0,0.2);
+     z-index: 3;
+     transition: all 0.3s ease;
+     cursor: pointer;
+     }
+
+     .hero-badge:hover {
+     background-color: #f90;
+     color: #fff;
+     transform: scale(1.05);
+     }
+    .content {
+      max-width: 750px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    .meta {
+      color: #999;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <a href="https://109405088.github.io/%E9%A6%96%E9%A0%81.html" 
+         style="text-decoration: none; color: white;">
+        <h1 style="margin: 0;">馨之所向✨</h1>
+      </a>
+    </div>  
+    <div class="menu">
+     <div class="menu">
+    <button onclick="showTopic()">
+      <img src="./image/newspaper.png" alt="報紙圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">專題
+    </button>
+    <button><img src="./image/大聲公.png" alt="新聞圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">新聞</button>
+    <button><img src="./image/廣播.png" alt="廣播圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">廣播</button>
+    <button><img src="./image/攝影.png" alt="圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">攝影</button>
+  </div>
+  </header>
+    
+  <section class="hero" style="margin-top: 1rem; display: flex; justify-content: center;">
+    <a href="https://youtu.be/xwidAzAHpRI" target="_blank" style="position: relative; width: 80%; display: block;">
+      <img src="漫漫創生路.png" alt="創生封面" style="width: 100%; display: block;">
+      <div class="hero-badge">點擊圖片觀看報導</div>
+     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;background-color: rgba(0,0,0,0.15); z-index: 1; pointer-events: none;"></div>
+    </a>
+  </section>  
+  
+  <div style="text-align: center; font-weight: bold; font-size: 2.5rem; margin: 1.5rem auto 1rem auto; width: 80%;">
+    漫漫創生路，何創何生？
+  </div>
+<section class="content">
+    <div class="meta" style="text-align: center; margin-top: -0.5rem;">
+      2024-03-06｜記者吳冠緯、蔡文馨採訪報導
+    </div>
+    <div style="text-align: center;max-width: 800px; margin: 2rem auto; padding: 1rem; background-color: #f4f4f4; border-radius: 0.5rem;">
+    <p> <strong>製作／吳冠緯、蔡文馨<br>
+        指導老師／劉蕙苓<br><br></strong>
+        
+        <strong>特別感謝：</strong><br>
+        宜蘭牛頭司休閒農場負責人黃勁凱<br>
+        台灣社區營造學會理事長王本壯<br>
+        魚樂天地鄉鎮應援團執行長何立德<br>
+        花東菜市集創辦人彭昱融<br>
+        小草書屋副校長阮家貞<br>
+        政大社會責任辦公室地方創生計畫專案經理汪文豪<br>
+        （依照出場順序排序）<br><br>
+        
+        <strong>資料來源：</strong><br>
+        2022台灣地方創生體檢報告<br>
+        國家發展委員會<br>
+        花東菜市集臉書<br>
+        小草書屋臉書<br>
+        行政院主計處 </p>
+  </div>
+</section>
+</body>
+</html>
