@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【廣播節目】EP9 科技類＿設計遊牧</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", sans-serif;
+      background-color: #ffddb6;
+      color: #222;
+    }
+    header {
+      background-color: #ffa856;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      color: white;
+      font-size: 2rem;
+      margin: 0;
+    }
+    .menu button {
+      background-color: #fff;
+      color: #f90;
+      border: 2px solid #f90;
+      padding: 0.6rem 1.4rem;
+      border-radius: 999px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-left: 1rem;
+    }
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 4rem 2rem 2rem;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .image-box {
+      flex: 1 1 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 2rem;
+    }
+    .image-box img {
+      width: 100%;
+      max-width: 750px;
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .info-box {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      flex: 1 1 40%;
+      max-width: 500px;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .info-box h2 {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 1rem 0;
+      margin-top: 2rem;
+    }
+    .info-box p, .info-box li {
+      text-align: left;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+    }
+    ul li {
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+    .cta {
+      margin-top: 1rem;
+      padding: 1.2rem 2.5rem;
+      font-size: 1.2rem;
+      border: 2px solid #ff6600;
+      border-radius: 999px;
+      font-weight: bold;
+      color: #ff6600;
+      background: none;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .cta:hover {
+      background-color: #ff6600;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+    <body>
+        <header>
+            <div>
+              <a href="https://109405088.github.io/%E9%A6%96%E9%A0%81.html" 
+                 style="text-decoration: none; color: white;">
+                <h1 style="margin: 0;">馨之所向✨</h1>
+              </a>
+            </div> 
+            <div class="menu">
+                <button onclick="showTopic()">
+                  <img src="newspaper.png" alt="報紙圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">專題
+                </button>
+                <button><img src="大聲公.png" alt="新聞圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">新聞</button>
+                <button><img src="廣播.png" alt="廣播圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">廣播</button>
+                <button><img src="攝影.png" alt="圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">攝影</button>
+              </div>
+  </header>
+
+  <main class="main">
+    <div class="image-box">
+      <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/482024975_1196209225844324_8737023585245414077_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Cy4_DvshmgwQ7kNvwHYzVBr&_nc_oc=AdmFewinGKtmGRr4sb_3PKEuFYhE6_tPxQaFlWYOMMUShqq-7mYKZEehA9PazBnJAIo&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=KEhr63GIJrvOjQHJD0dMNw&oh=00_AfOaKbVV-9DIBrOaLnPOcTLGoNYCVFbotqaF9vx8SIBZcQ&oe=68564063" alt="旅行熱炒店封面">
+    </div>
+    <div class="info-box">
+      <h2>📌 本週主題</h2>
+      <p>📻 Podcast X <strong>#科技類</strong></p>
+      <p>🗞️ 來賓：設計遊牧<strong>主持人 新雅、Jasmine</strong></p>
+
+      <h2>🎧 本集重點</h2>
+      <ul>
+        <li>📍 帶你認識科技類前五名</li>
+        <li>📍 小帕與小卡近期推薦的節目</li>
+        <li>📍 竟然是因為隊輔小隊員及訪談嘉賓的關係而相遇</li>
+        <li>📍 為什麼要製作線上課程呢？</li>
+        <li>📍 當UX設計師及專員的工作秘辛</li>
+        <li>📍 做節目感染他人的同時，也幫助主持人們成長</li>
+        <li>📍 UX職場入門的五大建議</li>
+        <li>📍 期望串連各地UXUI設計師的故事傳遞溫暖和力量</li>
+      </ul>
+      <a class="cta" href="https://drive.google.com/file/d/1jWN8A3tDS5GQaTucXMX4KdOXCfxf9Dp_/view" target="_blank">▶ 點我收聽節目</a>
+    </div>
+  </main>
+</body>
+</html>
