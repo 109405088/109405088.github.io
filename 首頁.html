@@ -123,6 +123,7 @@
     .news-card {
       text-decoration: none !important;
       color: inherit !important;
+      position: relative; /* 新增這行 */
       width: 23%;
       min-width: 260px;
       border-radius: 1rem;
@@ -135,6 +136,19 @@
       justify-content: space-between;
       cursor: pointer;
     }
+.card-tag {
+     position: absolute;
+     top: 12px;
+     left: 12px;
+     background-color: #ff6701dd;
+     color: white;
+     padding: 0.3em 0.8em;
+     font-size: 1rem;
+     border-radius: 10px;
+     font-weight: bold;
+     z-index: 2;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
 
     .news-card:hover {
       transform: translateY(-5px);
@@ -235,16 +249,78 @@
     </a>
     </div>
   </div>
+  <div id="section-news" class="section-box" style="display: none;">
+    <div class="section-title">
+      <img src="大聲公.png" alt="大聲公圖示" class="section-icon">
+      <span>新聞</span>
+    </div>
+
+    <div class="news-section">
+      <a href="https://109405088.github.io/18歲公民權.html" target="_blank" class="news-card">
+        <div class="card-tag">🏫 校園</div>
+        <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/11/c78759ff6e4c79ba3550b60b4f9c7719.jpg" alt="公民權封面">
+        <h3>18歲公民權正反交鋒<br>提升公民素養成關鍵</h3>
+        <p>台灣首次公民修憲複決案「18歲公民權」將於26日與九合一大選共同舉行。此項公投案雖將下修投票年齡，賦予青年參與政治的權利⋯⋯</p>
+      </a>
+      <a href="https://109405088.github.io/中山心理假.html
+      " target="_blank" class="news-card">
+      <div class="card-tag">🏫 校園</div>
+      <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/10/25ea206daf1119fe0aa766987241f15b-scaled.jpg" alt="心理假封面">
+      <h3> 中山心理假申請數低落<br>制度成效仍待觀察</h3>
+      <p>國立中山大學去年首創「心理不適假」，搭配導師關懷與諮商介入等配套措施，協助學生調適身心狀態。中山學務長楊靜利表示⋯⋯</p>
+    </a>
+      <a href="https://109405088.github.io/白紙革命.html" target="_blank" class="news-card">
+        <div class="card-tag">🏫 校園</div>
+      <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/11/25b2916b5c49db617f52fa5ea48efee7-2-scaled.jpg" alt="白紙革命封面">
+      <h3>燭光點亮自由廣場<br>民眾自發聲援中國抗議行動</h3>
+      <p>「不要以為一切會回來，不要迷信曾經的熱愛，在如夢初醒的今天，我們是最後一代⋯⋯」民眾伴隨著吉他聲高唱，一同聲援中國各地⋯⋯</p>
+    </a>
+      <a href="https://109405088.github.io/田徑.html" target="_blank" class="news-card">
+        <div class="card-tag">⚾️ 體育</div>
+      <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/10/6bb61e3b7bce0931da574d19d1d82c88.png" alt="田徑封面">
+      <h3> 放眼杭州亞運<br>楊俊瀚沈怡如城市盃破紀錄</h3>
+      <p>111年新北城市盃全國田徑公開賽於1日至5日在板橋第一運動場舉行，集結國內各方好手共襄盛舉。「台灣最速男」楊俊瀚再度擊敗⋯⋯</p>
+    </a>
+    <a href="https://109405088.github.io/桌球.html" target="_blank" class="news-card">
+      <div class="card-tag">⚾️ 體育</div>
+      <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/11/ea66c06c1e1c05fa9f1aa39d98dc5bc1.png" alt="桌球封面">
+      <h3>全桌賽首闖四強<br>黎氏兄弟盼披國手戰袍</h3>
+      <p>台灣桌球界少見的兄弟檔，國內男子排名第六、臺北市立大學黎昕祐聯手同來自北市大的哥哥黎昕陽，一路過關斬將闖進四強⋯⋯</p>
+    </a>
+    <a href="https://109405088.github.io/柔道.html" target="_blank" class="news-card">
+      <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/11/411a78b6ede7bce165991a32637e3d62-scaled.jpg" alt="柔道封面">
+      <div class="card-tag">⚾️ 體育</div>
+      <h3>越級挑戰66KG<br>林崇佑奪中正盃柔道冠軍</h3>
+      <p>「Ippon！」四分鐘時間快速倒數，國立臺東大學林崇佑最終在1分40秒，以「足技」壓制同校學弟林彥呈獲得勝利⋯⋯</p>
+    </a>
+    <a href="https://109405088.github.io/撐竿跳高.html" target="_blank" class="news-card">
+      <div class="card-tag">⚾️ 體育</div>
+      <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/10/6446d860dbbfe540e9e2cbab5f98f1e3.png" alt="撐竿跳高封面">
+      <h3>「撐」起屏東榮耀<br>林志成黃正琦全田賽放異彩</h3>
+      <p>111年度全國田徑錦標賽男子組撐竿跳高項目21日在大雨中登場，代表屏東縣參賽的國立屏東大學林志成與黃正琦最終勇奪冠、季軍⋯⋯</p>
+    </a>
+    <a href="https://109405088.github.io/藤球.html" target="_blank" class="news-card">
+      <div class="card-tag">⚾️ 體育</div>
+      <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/12/411a78b6ede7bce165991a32637e3d62-3-scaled.jpg" alt="撐竿跳高封面">
+      <h3>  師徒聯手跨域挑戰<br>楊佳翰趙林嘉稱霸藤球賽</h3>
+      <p>趙林嘉自地面跳起，快速伸出長腿，使出一記「下壓」將球回擊至對手場內得分。中華民國大專校院111學年度藤球錦標賽男子組二人賽⋯⋯</p>
+    </a>
+    </div>
+  </div>
   <script>
     function showTopic() {
-      const topic = document.getElementById("section-topic");
-      topic.style.display = "block";
-
+      document.getElementById("section-topic").style.display = "block";
+      document.getElementById("section-news").style.display = "none";
       setTimeout(() => {
-        topic.scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
+        document.getElementById("section-topic").scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 100);
+    }
+
+    function showNews() {
+      document.getElementById("section-news").style.display = "block";
+      document.getElementById("section-topic").style.display = "none";
+      setTimeout(() => {
+        document.getElementById("section-news").scrollIntoView({ behavior: "smooth", block: "start" });
       }, 100);
     }
   </script>
