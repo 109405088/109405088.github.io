@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【校園新聞】中山心理假申請數低落</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", sans-serif;
+      line-height: 1.8;
+      background-color: #fff;
+      color: #222;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background-color: #ffa856;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+    }
+    header h1 {
+      color: #fff;
+      font-size:2rem;
+      margin: 0;
+    }
+    .menu {
+      display: flex;
+      gap: 1.2rem;
+    }
+    .menu button {
+      background-color: #fff;
+      color: #f90;
+      border: 2px solid #f90;
+      padding: 0.6rem 1.4rem;
+      border-radius: 999px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .hero {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero img {
+      width: 80%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      object-fit: contain;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-text {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: white;
+      font-size: 2.2rem;
+      font-weight: bold;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+      width: 80%;
+    }
+    .hero-badge {
+     position: absolute;
+     top: 2.5rem;  /* 已向下調整距離 */
+     right: 1rem;
+     background-color: #fff;
+     color: #f90;
+     font-weight: bold;
+     font-size: 0.85rem;
+     padding: 0.4rem 1rem;
+     border-radius: 999px;
+     box-shadow: 0 0 5px rgba(0,0,0,0.2);
+     z-index: 3;
+     transition: all 0.3s ease;
+     cursor: pointer;
+     }
+
+     .hero-badge:hover {
+     background-color: #f90;
+     color: #fff;
+     transform: scale(1.05);
+     }
+     .content {
+     max-width: 750px;
+     margin: 2rem auto;
+     padding: 0 1.5rem;
+     }
+    h2 {
+      color:#f90;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;}
+     p {margin-bottom: 1.2rem; }
+
+     .hero {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;}
+        
+     .hero-tag {
+     position: absolute;
+     top: 1rem;
+     left: calc(10% + 1rem);  /* 避免圖片偏移 */
+     background-color: #ff6600;
+     color: white;
+     display: flex;
+     align-items: center;
+     gap: 0.3rem;
+     padding: 0.4rem 0.8rem;
+     border-radius: 0.4rem;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+     z-index: 3;}
+            
+     .hero-tag img {
+     width: 1.2rem;   /* ✅ 控制 icon 尺寸 */
+     height: 1.2rem;
+     object-fit: contain}
+
+     .content figure img {
+        width: 100%;
+        height: 300px;        /* ✅ 內文圖保持固定高度 */
+        object-fit: cover;    /* ✅ 填滿容器，自動裁切 */
+        border-radius: 0.3rem;
+        display: block;}
+
+     .content figure img {
+        width: 100%;
+        height: 300px;           /* ✅ 固定高度，可依需要調整 */
+        object-fit: cover;       /* ✅ 自動裁切圖片以填滿容器 */
+        border-radius: 0.3rem;
+        display: block;}
+     
+     .hero-tag {
+     position: absolute;
+     top: 1rem;
+     left: calc(10% + 1rem);
+     background-color: #ff6600;
+     color: white;
+     display: flex;
+     align-items: center;
+     gap: 0.3rem;
+     padding: 0.4rem 0.8rem;
+     border-radius: 0.4rem;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+     z-index: 3;
+     transition: all 0.3s ease;   /* 加入平滑動畫 */
+     cursor: pointer;}
+     
+     .hero-tag img {
+        width: 1.2rem;
+        height: 1.2rem;
+        object-fit: contain;}
+
+/* ✅ Hover 效果：加深背景、放大、加陰影 */
+   .hero-tag:hover {
+    background-color: #cc5200;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);}
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <a href="https://109405088.github.io/%E9%A6%96%E9%A0%81.html" 
+         style="text-decoration: none; color: white;">
+        <h1 style="margin: 0;">馨之所向✨</h1>
+      </a>
+    </div> 
+    <div class="menu">
+      <button>專題</button>
+      <button>新聞</button>
+      <button>廣播</button>
+      <button>攝影</button>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-tag">
+    <img src="學校.png" alt="學校圖示" ><span>校園</span></div>
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/10/25ea206daf1119fe0aa766987241f15b-scaled.jpg" alt="心理假封面" class="hero-img">
+</section>  
+<div style="text-align: center; font-weight: bold; font-size: 2.5rem; margin: 1.5rem auto 1rem auto; width: 80%;">
+    中山心理假申請數低落<br>制度成效仍待觀察
+</div>
+<section class="content">
+  <div class="meta" style="text-align: center; margin-top: -0.5rem;">
+    2022-10-06｜記者蔡文馨綜合報導
+</div>
+<p>國立中山大學去年首創「心理不適假」，搭配導師關懷與諮商介入等配套措施，協助學生調適身心狀態。中山學務長楊靜利表示，施行首年沒有學生以心理假為由請假，而本學期至今僅有六位學生使用心理假，制度實際成效仍有待觀察。</p>
+<figure style="margin-top: 2rem;">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/10/7f4d8b71df49e6912e7bd406020dcc7c.jpg" style="width: 100%;height: auto;border-radius: 0.3rem;display: block;">
+    <figcaption style="font-size: 0.9rem; color: #555; margin-top: 0.5rem; text-align: center;">
+        國立中山大學去年首創「心理不適假」，搭配導師關懷與諮商介入等配套措施，協助學生調適身心狀態。  圖／鮑姿穎提供</figure></figcaption>
+<p>2021年5月，校方正式將「心理不適假」新增至《國立中山大學學生請假規定》。中山畢業生、109學年度學生事務會議委員林玟圻表示，心理假是由校方主動推行，因此在推行過程中十分順利，討論半年即正式設置。目前欲申請心理假的學生，僅需要至請假系統做登記，並說明請假原因即可，且每學期未有申請心理假之上限。楊靜利表示，若學生請心理假過多次，校方會通報導師，介入關心學生，但若狀況仍未改善，才會再向上通報諮商中心。</p>
+<p>對於心理不適假，多數中山學生皆表示肯定。中山外國語文學系學生鮑姿穎認為，現代人罹患心理疾病的數量漸增，心理假的設置讓學生有喘息的空間，也能適時紓解自己的情緒。「對於因心理因素不敢去上課的學生，心理假是很自在的選擇。」才剛請過心理假的中山外國語文學系學生L小姐（化名）表示，學生在心理不穩定的狀況下，根本無法專心，因此，他認為與其讓學生用不健康的心理去上課，不如讓他們的身心靈放假。</p>
+<figure style="margin-top: 2rem;">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/10/d5ca026d8a6c37eb36f2ca35b1af2445-scaled.jpg" style="width: 100%;height: auto;border-radius: 0.3rem;display: block;">
+    <figcaption style="font-size: 0.9rem; color: #555; margin-top: 0.5rem; text-align: center;">
+        心理不適假得到多數中山師生的肯定，但對於宣傳成效與學生濫用問題，也引發師生間的討論與疑慮。 <br>圖／鮑姿穎提供</figure></figcaption>
+<p>即便心理假制度立意良善，多數校內學生卻並不清楚校方有設置此假別，中山劇場藝術學系學生Ben（化名）表示，直到20日學校官網發布心理假相關貼文，他才得知此消息，且身邊也尚未有同學申請過此假別。事實上，針對心理假的宣傳，楊靜利表示，中山校方是以發布會議議程的形式至全校師生信箱，可能導致師生未及時得知心理假消息。此外，針對心理假使用人數低落，Ben分析，心理假的實施，恐會造成校方、老師及同學過度關心，而讓申請人未得到真正的休息，無法發揮心理假實際用意。</p>
+<p>心理假制度逐漸廣為人知，也引發部分師生擔憂心理假是否會遭學生濫用。對此，中山中國文學系副教授杜佳倫正向看待，「大學生已是成人，能自己做好學習規劃與判斷，若有人刻意濫用，那就是不尊重設置制度的善意，也不尊重真正有需要的人。」杜佳倫也贊成心理不適假的設置，根據其授課經驗，他認為心理假能幫助有身心狀況的學生，讓他們可以適當休息。杜佳倫更表示，通常主動提出需求的學生，也較能在身心恢復後積極回到班上繼續學習。</p>
+<figure style="margin-top: 2rem;">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/10/25ea206daf1119fe0aa766987241f15b-scaled.jpg" style="width: 100%;height: auto;border-radius: 0.3rem;display: block;">
+    <figcaption style="font-size: 0.9rem; color: #555; margin-top: 0.5rem; text-align: center;">
+        中山大學心理不適假的使用人數施行至今雖看似不理想，但立意良善，不僅鼓勵學生正視身心狀況，更是多一種假別供學生選擇。 圖／蔡文馨攝</figure></figcaption>
+<p>目前教育部國教署正研議於高中以下學校實施心理不適假，而國立臺灣師範大學、國立東華大學及國立臺灣大學等校也正研擬相關規定，顯示學生心理健康議題備受關注。作為全台首間實施心理假制度的學校，楊靜利認為，心理不適假的設立，除了鼓勵學生正視身心狀況外，更是多一種假別供學生選擇。Ben也肯定校方設置心理假的政策，讓學生可以透過合乎校規的管道，且在不損害自身權益的情況下合理請假，適時調整身心靈狀況。</p>
+</section>

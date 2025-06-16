@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【校園新聞】燭光點亮自由廣場</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", sans-serif;
+      line-height: 1.8;
+      background-color: #fff;
+      color: #222;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background-color:#ffa856;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+    }
+    header h1 {
+      color: #fff;
+      font-size:2rem;
+      margin: 0;
+    }
+    .menu {
+      display: flex;
+      gap: 1.2rem;
+    }
+    .menu button {
+      background-color: #fff;
+      color: #f90;
+      border: 2px solid #f90;
+      padding: 0.6rem 1.4rem;
+      border-radius: 999px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .hero {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero img {
+      width: 80%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      object-fit: contain;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-text {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: white;
+      font-size: 2.2rem;
+      font-weight: bold;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+      width: 80%;
+    }
+    .hero-badge {
+     position: absolute;
+     top: 2.5rem;  /* 已向下調整距離 */
+     right: 1rem;
+     background-color: #fff;
+     color: #f90;
+     font-weight: bold;
+     font-size: 0.85rem;
+     padding: 0.4rem 1rem;
+     border-radius: 999px;
+     box-shadow: 0 0 5px rgba(0,0,0,0.2);
+     z-index: 3;
+     transition: all 0.3s ease;
+     cursor: pointer;
+     }
+
+     .hero-badge:hover {
+     background-color: #f90;
+     color: #fff;
+     transform: scale(1.05);
+     }
+     .content {
+     max-width: 750px;
+     margin: 2rem auto;
+     padding: 0 1.5rem;
+     }
+    h2 {
+      color:#f90;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;}
+     p {margin-bottom: 1.2rem; }
+
+     .hero {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;}
+        
+     .hero-tag {
+     position: absolute;
+     top: 1rem;
+     left: calc(10% + 1rem);  /* 避免圖片偏移 */
+     background-color: #ff6600;
+     color: white;
+     display: flex;
+     align-items: center;
+     gap: 0.3rem;
+     padding: 0.4rem 0.8rem;
+     border-radius: 0.4rem;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+     z-index: 3;}
+            
+     .hero-tag img {
+     width: 1.2rem;   /* ✅ 控制 icon 尺寸 */
+     height: 1.2rem;
+     object-fit: contain}
+
+     .content figure img {
+        width: 100%;
+        height: 300px;        /* ✅ 內文圖保持固定高度 */
+        object-fit: cover;    /* ✅ 填滿容器，自動裁切 */
+        border-radius: 0.3rem;
+        display: block;}
+
+     .content figure img {
+        width: 100%;
+        height: 300px;           /* ✅ 固定高度，可依需要調整 */
+        object-fit: cover;       /* ✅ 自動裁切圖片以填滿容器 */
+        border-radius: 0.3rem;
+        display: block;}
+     
+     .hero-tag {
+     position: absolute;
+     top: 1rem;
+     left: calc(10% + 1rem);
+     background-color: #ff6600;
+     color: white;
+     display: flex;
+     align-items: center;
+     gap: 0.3rem;
+     padding: 0.4rem 0.8rem;
+     border-radius: 0.4rem;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+     z-index: 3;
+     transition: all 0.3s ease;   /* 加入平滑動畫 */
+     cursor: pointer;}
+     
+     .hero-tag img {
+        width: 1.2rem;
+        height: 1.2rem;
+        object-fit: contain;}
+
+/* ✅ Hover 效果：加深背景、放大、加陰影 */
+   .hero-tag:hover {
+    background-color: #cc5200;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);}
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <a href="https://109405088.github.io/%E9%A6%96%E9%A0%81.html" 
+         style="text-decoration: none; color: white;">
+        <h1 style="margin: 0;">馨之所向✨</h1>
+      </a>
+    </div> 
+    <div class="menu">
+      <button>專題</button>
+      <button>新聞</button>
+      <button>廣播</button>
+      <button>攝影</button>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-tag">
+    <img src="學校.png" alt="學校圖示" ><span>校園</span></div>
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/11/25b2916b5c49db617f52fa5ea48efee7-2-scaled.jpg" alt="白紙革命封面" class="hero-img">
+</section>  
+<div style="text-align: center; font-weight: bold; font-size: 2.5rem; margin: 1.5rem auto 1rem auto; width: 80%;">
+  燭光點亮自由廣場<br>民眾自發聲援中國抗議行動
+</div>
+<section class="content">
+  <div class="meta" style="text-align: center; margin-top: -0.5rem;">
+    2022-11-28｜記者蔡文馨台北報導
+</div>
+<p>「不要以為一切會回來，不要迷信曾經的熱愛，在如夢初醒的今天，我們是最後一代⋯⋯」民眾伴隨著吉他聲高唱，一同聲援中國各地近日爆發的抗議行動。昨（27）日晚間，台灣民眾自發性在自由廣場前舉行聲援中國行動，並進行哀悼紀念。參與民眾期盼透過海外聲援，將中國境內的聲音擴散到各地，成為中國人民海外的力量與後盾。</p>
+<p>近期中國新疆烏魯木齊發生一場大火，疑因封控過度釀成十死九傷的悲劇。26日起，中國多處陸續發起哀悼，隨後演變為反「清零政策」的抗議行動，至今持續在境內擴大蔓延。民眾舉起白紙、手持燭光，聲援中國各地掀起的「白紙革命」抗議浪潮。活動中民眾自發性接力發言，闡述過去人民抗爭過程中所面臨的困境，並表達對於中國人民的祝福及支持。</p>
+<figure style="margin-top: 2rem;">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/11/411a78b6ede7bce165991a32637e3d62-3-scaled.jpg" style="width: 100%;height: auto;border-radius: 0.3rem;display: block;">
+    <figcaption style="font-size: 0.9rem; color: #555; margin-top: 0.5rem; text-align: center;">
+        透過「不自由毋寧死」、「中國人要自由」等看板，聲援中國人民的抗議行動，並期望在異地與受壓迫的中國人民站在一起。　圖／蔡文馨攝</figure></figcaption>
+<p>即使18歲公民權的落實，能賦予青年參與政治的權利，但仍有學生對於18歲青年的獨立思考與判斷力抱持懷疑的態度。「18歲代表成年但心智年齡或思想上真的就是成熟了嗎？」國立中正大學社會福利學系許惠淳認為，18歲的學生正逢高三，多埋首於升學考試中，缺乏參與公共事務的機會，其立場的公信度及能力皆較難被大眾認可。雖然台灣是世界上少數20歲才具有投票權的民主國家，但國立政治大學民族學系學生王芝淇認為台灣的狀況無法與世界其他國家相提並論。他進一步指出，台灣學生在國高中時受家長及學校妥善保護，學習環境相較歐美地區封閉，鮮少在校園間談論政治，其成長環境未必能培養18歲者具備獨立思考的能力。</p>
+<figure style="margin-top: 2rem;">
+  <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/11/4aa3d4b3a32a3b96de40153dcacff3ed-scaled.jpg" style="width: 100%;height: auto;border-radius: 0.3rem;display: block;">
+  <figcaption style="font-size: 0.9rem; color: #555; margin-top: 0.5rem; text-align: center;">
+    有民眾自行製作看板到現場進行聲援，呼籲中國人民對於違反人權的政策，「不要沈默、不要麻木」。　圖／蔡文馨攝</figure></figcaption>
+<p>18歲者的思想成熟度備受質疑，但現任職於臺北市立內湖高級中學的公民老師周維毅認為，學生的年齡與社會歷練都不是關鍵，即便成年人也不一定具有獨立思考的能力。他以教授經驗為例，提及現今高中課程設計裡，有許多機會讓學生針對公共議題進行討論，而學生有時討論深度甚至可能比成年人更加成熟，因此，他認為不能單以年齡作為思考成熟度的判斷依據，「學生本來就有表達意見的權利，即便今天不成熟，他也能夠去表達意見。」社團法人台灣少年權益與福利促進聯盟企宣公關左欣平也表示特定能力並非決定選民資格的條件。他指出台灣社會因人口老化問題，導致整體政策傾向高齡者，而青年選民數量較少，執政者較易忽略青年人口的需求。</p>
+<p>許多民眾透過網路訊息得知聲援活動，包括多所大學異議性社團及人權團體前來聲援。26日，台灣甫結束地方大選，許多到場學生也剛返鄉投票，便趕赴現場參與聲援。來自無力者組織的學生蕭祐認為，政治參與不僅限於投票，也包含用行動去為世界盡微薄之力。他對中國人民信心喊話：「不要輕言放棄爭取自己的自由！」期望他們知道台灣人會與其站在一起，務必堅持下去。</p>
+<figure style="margin-top: 2rem;">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/11/411a78b6ede7bce165991a32637e3d62-4-scaled.jpg" style="width: 100%;height: auto;border-radius: 0.3rem;display: block;">
+    <figcaption style="font-size: 0.9rem; color: #555; margin-top: 0.5rem; text-align: center;">
+      在自由廣場的碑門下，擺放著由民眾寫下的聲援「不要核酸要自由」、「不再給公權力口交」以及「我們是最後一代」等布條及看板。　圖／蔡文馨攝</figure></figcaption>
+<p>除了到場參與的學生外，曾任六四天安門事件領袖、中國民運人士王丹也至自由廣場親自聲援。「運動有可能成功，也有可能失敗。」即便如此，他仍認為民主運動是一條漫長的路，藉由自身經歷，他希望鼓勵中國覺醒的年輕人，即使遭遇挫折，也要堅持理想走下去。</p>
+<figure style="margin-top: 2rem;">
+  <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/11/411a78b6ede7bce165991a32637e3d62-1-scaled.jpg" style="width: 100%;height: auto;border-radius: 0.3rem;display: block;">
+  <figcaption style="font-size: 0.9rem; color: #555; margin-top: 0.5rem; text-align: center;">
+    曾任六四天安門事件領袖、中國民運人士王丹高舉「中國人的命也是命」的白紙，手持燭火共同響應。　圖／蔡文馨攝</figure></figcaption>
+    <figure style="margin-top: 2rem;">
+        <img src="https://unews.nccu.edu.tw/wp-content/uploads/2022/11/411a78b6ede7bce165991a32637e3d62-2-scaled.jpg" style="width: 100%;height: auto;border-radius: 0.3rem;display: block;">
+        <figcaption style="font-size: 0.9rem; color: #555; margin-top: 0.5rem; text-align: center;">
+            參與活動的民眾高舉「不自由毋寧死」、「東亞人救東亞人」等布條及看板進行聲援，在場也有民眾紛紛舉起白紙，白紙據稱代表無法自由表達言論的憤怒。　圖／蔡文馨攝</figure></figcaption>
+</section>
