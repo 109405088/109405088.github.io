@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【廣播節目】EP7 教育類＿哇賽心理學</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", sans-serif;
+      background-color: #ffddb6;
+      color: #222;
+    }
+    header {
+      background-color: #ffa856;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      color: white;
+      font-size: 2rem;
+      margin: 0;
+    }
+    .menu button {
+      background-color: #fff;
+      color: #f90;
+      border: 2px solid #f90;
+      padding: 0.6rem 1.4rem;
+      border-radius: 999px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-left: 1rem;
+    }
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 4rem 2rem 2rem;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .image-box {
+      flex: 1 1 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 2rem;
+    }
+    .image-box img {
+      width: 100%;
+      max-width: 750px;
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .info-box {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      flex: 1 1 40%;
+      max-width: 500px;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .info-box h2 {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 1rem 0;
+      margin-top: 2rem;
+    }
+    .info-box p, .info-box li {
+      text-align: left;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+    }
+    ul li {
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+    .cta {
+      margin-top: 1rem;
+      padding: 1.2rem 2.5rem;
+      font-size: 1.2rem;
+      border: 2px solid #ff6600;
+      border-radius: 999px;
+      font-weight: bold;
+      color: #ff6600;
+      background: none;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .cta:hover {
+      background-color: #ff6600;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+    <body>
+        <header>
+            <div>
+              <a href="https://109405088.github.io/%E9%A6%96%E9%A0%81.html" 
+                 style="text-decoration: none; color: white;">
+                <h1 style="margin: 0;">馨之所向✨</h1>
+              </a>
+            </div> 
+            <div class="menu">
+                <button onclick="showTopic()">
+                  <img src="newspaper.png" alt="報紙圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">專題
+                </button>
+                <button><img src="大聲公.png" alt="新聞圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">新聞</button>
+                <button><img src="廣播.png" alt="廣播圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">廣播</button>
+                <button><img src="攝影.png" alt="圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">攝影</button>
+              </div>
+  </header>
+
+  <main class="main">
+    <div class="image-box">
+      <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/482073770_1195334089265171_5418663004290450286_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4aR1DWYk7zIQ7kNvwFCCtFL&_nc_oc=AdkdfD9XbB3cwuAi_HOsQzI8m-uOD_BuqH9O0q3UO235B0QD-iLb6o2bu4J9hn1Ufac&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=QdxrQMsbOvExN1THbxX3aA&oh=00_AfOBAlH8EO4OyE4xb-9cpRmJCjZ0qlrpxlT329GG76G82Q&oe=685642B8" alt="旅行熱炒店封面">
+    </div>
+    <div class="info-box">
+      <h2>📌 本週主題</h2>
+      <p>📻 Podcast X <strong>#教育類</strong></p>
+      <p>🗞️ 來賓：哇塞心理學<strong>主持人 宇哲</strong></p>
+
+      <h2>🎧 本集重點</h2>
+      <ul>
+        <li>📍 帶你認識教育類前五名</li>
+        <li>📍 小帕與小卡近期推薦的節目</li>
+        <li>📍 原來閱讀1500字文章不用花到一分鐘</li>
+        <li>📍 即使逆風創作，也要傳達正確的理念</li>
+        <li>📍 改變他人不如先改變自己！</li>
+        <li>📍 搭捷運為什麼都站右邊而不站左邊呢？</li>
+        <li>📍 做好節目的關鍵：少用專有名詞、題材貼近生活、多元發展不侷限</li>
+        <li>📍 哇賽心理學年底將到來的新計畫</li>
+      </ul>
+      <a class="cta" href="https://drive.google.com/file/d/1EiS0lYUqBW4lg3c2j8OREMEaf7EH3gWQ/view" target="_blank">▶ 點我收聽節目</a>
+    </div>
+  </main>
+</body>
+</html>
