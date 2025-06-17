@@ -109,6 +109,28 @@
     p {
       margin-bottom: 1.2rem;
     }
+     #backToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  display: none; /* 初始隱藏 */
+  transition: transform 0.3s;
+}
+
+#backToTop:hover {
+  transform: scale(1.1);
+  background-color: #ff6600;
+}
   </style>
 </head>
 <body>
@@ -201,3 +223,19 @@
       <figcaption style="font-size: 0.9rem; color: #555; margin-top: 0.5rem; text-align: center;">
         TikTok成為新興課外學習管道，兒童透過TikTok的教學影音，學習如何撰寫文章。<br>圖／林玟君攝
   </figure>
+<script>
+  // 顯示 / 隱藏按鈕
+  window.onscroll = function () {
+    const btn = document.getElementById("backToTop");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // 滾動到頂部
+  document.getElementById("backToTop").addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
