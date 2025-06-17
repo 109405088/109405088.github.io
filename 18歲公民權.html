@@ -163,6 +163,29 @@
         height: 1.2rem;
         object-fit: contain;}
 
+       #backToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  display: none; /* 初始隱藏 */
+  transition: transform 0.3s;
+}
+
+#backToTop:hover {
+  transform: scale(1.1);
+  background-color: #ff6600;
+}
+
 /* ✅ Hover 效果：加深背景、放大、加陰影 */
    .hero-tag:hover {
     background-color: #cc5200;
@@ -218,3 +241,19 @@
         中正大學學生會於校內演藝廳外牆面設置連儂牆，提供學生寫下對於18歲公民權的想法，以及回想對於十八歲的期待與困境。圖／許惠淳提供</figure></figcaption>
 <p>目前教育部國教署正研議於高中以下學校實施心理不適假，而國立臺灣師範大學、國立東華大學及國立臺灣大學等校也正研擬相關規定，顯示學生心理健康議題備受關注。作為全台首間實施心理假制度的學校，楊靜利認為，心理不適假的設立，除了鼓勵學生正視身心狀況外，更是多一種假別供學生選擇。Ben也肯定校方設置心理假的政策，讓學生可以透過合乎校規的管道，且在不損害自身權益的情況下合理請假，適時調整身心靈狀況。</p>
 </section>
+<script>
+  // 顯示 / 隱藏按鈕
+  window.onscroll = function () {
+    const btn = document.getElementById("backToTop");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // 滾動到頂部
+  document.getElementById("backToTop").addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
