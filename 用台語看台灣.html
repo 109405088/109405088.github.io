@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>用台語・看台灣</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", sans-serif;
+      background-color: #ffddb6;
+      color: #222;
+    }
+    header {
+      background-color: #ffa856;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      color: white;
+      font-size: 2rem;
+      margin: 0;
+    }
+    .menu button {
+      background-color: #fff;
+      color: #f90;
+      border: 2px solid #f90;
+      padding: 0.6rem 1.4rem;
+      border-radius: 999px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-left: 1rem;
+    }
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 4rem 2rem 2rem;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .image-box {
+      flex: 1 1 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 2rem;
+    }
+    .image-box img {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .info-box {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      flex: 1 1 40%;
+      max-width: 700px;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+    .info-box h2 {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 1rem 0;
+      margin-top: 2rem;
+    }
+
+    .info-box h3 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 1rem 0;
+      color:#ffa856;
+      margin-top: 2rem;}
+
+    .info-box p, .info-box li {
+      text-align: center;}
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;}
+    ul li {
+      margin-bottom: 1rem;
+      line-height: 1.7;}
+    .cta {
+      margin-top: 1rem;
+      padding: 1.2rem 2.5rem;
+      font-size: 1.2rem;
+      border: 2px solid #ff6600;
+      border-radius: 999px;
+      font-weight: bold;
+      color: #ff6600;
+      background: none;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      display: inline-block;}
+    .cta:hover {
+      background-color: #ff6600;
+      color: #fff;}
+
+      .news-section {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 1.5rem;
+     padding: 2rem;
+     max-width: 1200px;
+     margin: auto;
+     text-align: center;}
+
+    .news-card {
+      text-decoration: none !important;
+      color: inherit !important;
+      position: relative; /* 新增這行 */
+      width: 30%;
+      min-width: 300px;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      background-color: #fff;
+      overflow: hidden;
+      transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;}
+
+    .card-tag {
+     position: absolute;
+     top: 12px;
+     left: 12px;
+     background-color: #ff6701dd;
+     color: white;
+     padding: 0.3em 0.8em;
+     font-size: 1rem;
+     border-radius: 10px;
+     font-weight: bold;
+     z-index: 2;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);}
+
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .news-card h3 {
+      margin: 1rem 1rem 0.5rem 1rem;
+      color: #ff6600 !important;
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: none !important;
+    }
+
+    .news-card p {
+      margin: 0 1rem 1rem 1rem;
+      font-size: 0.95rem;
+      color: #444;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+    <body>
+        <header>
+            <div>
+              <a href="https://109405088.github.io/%E9%A6%96%E9%A0%81.html" 
+                 style="text-decoration: none; color: white;">
+                <h1 style="margin: 0;">馨之所向✨</h1>
+              </a>
+            </div> 
+            <div class="menu">
+                <button onclick="showTopic()">
+                  <img src="newspaper.png" alt="報紙圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">專題
+                </button>
+                <button><img src="大聲公.png" alt="新聞圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">新聞</button>
+                <button><img src="廣播.png" alt="廣播圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">廣播</button>
+                <button><img src="攝影.png" alt="圖示" style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">攝影</button>
+              </div>
+  </header>
+
+  <main class="main">
+    <div class="image-box">
+      <img src="用台語.JPG" alt="用台語封面">
+    </div>
+    <div class="info-box">
+      <h3>＼用台語・看台灣／</h3>
+      <h2><strong>🎙️主持人：文馨</strong></h2>
+
+      <h2>🎧 節目簡介</h2>
+      <ul>期望運用台語了解每位投身於傳統技藝、語言、文化傳承的每位人物，<br>他們延續傳統文化的理念、傳承上面臨的困境與堅持下去的理由等，<br>讓更多人看見他們的努力，<br>讓聽眾認識台灣各項傳統技藝、語言及文化，<br>若有熱情也可以投身於此。</ul>
+      <h2>✏️節目規劃</h2>
+      📍第一單元「聽！就是這个！」<br>介紹該集主題，及此技藝、文化等相關背景與資訊；<br>介紹該集人物或團體，簡介其所致力於推廣的傳統技藝及文化等，<br>帶領聽眾認識當週主題。<br><br>
+      📍第二單元「看！臺灣！」<br>以廣播新聞專題的形式呈現。<br>使用訪談內容、現場聲音採集作為聲音素材，<br>以主持人口白掌握單元節奏，讓每位人物的故事好好地走進聽眾心裡。<br>
+
+      <h2>🏆 節目殊榮</h2>
+      <ul>入圍2024第八屆TVBS全球華文永續報導獎</ul>
+  </main>
+
+   <h3 style="text-align: center;color:#ff6600;font-size:30px;">👇點擊下方集數，趕緊收聽👇</h3>
+
+  <div class="news-section">
+    <a href="https://109405088.github.io/褒歌.html" target="_blank" class="news-card">
+      <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/490742220_1229463372518909_1105661157866149722_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=zr4qMs6xucUQ7kNvwE9h6pw&_nc_oc=AdkJkKP4P0gZIbRE3wEe412HaWGcePgYte9XTn7GdvJaPObQBnkVwregxPbRZt1uLCo&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=ZXrsChyXPBTBehHsAzRhHA&oh=00_AfOTRk0EFx2_PVVWytstrxCN1sNALO_BZeb_DnZSmkow6A&oe=6856E11F" alt="褒歌">
+      <h3>EP1 澎湖各地行透透<br>用紙筆傳承褒歌</h3>
+    </a>
+    <a href="https://109405088.github.io/炸棗.html
+    " target="_blank" class="news-card">
+    <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/491970578_1229995065799073_6589747957039180650_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=n4b_2Dx-nvsQ7kNvwFEZrBA&_nc_oc=AdlzAlnYGwu0WkK1SugjjOhYPlVyrchZcEm_vZzqpf0bONEikpuJUkn4rHl9TrBQoPM&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=RmLzlr7bOg-yiPWm7oePmQ&oh=00_AfOJNKyBTcRuk3XpKSclcBX2Q__LmXNtG-OUFhrRDobj-w&oe=6856E7C1" alt="炸棗">
+    <h3>EP2 轉澎湖傳承餅舖<br>延續阿爸的好手藝</h3></a>
+    <a href="https://109405088.github.io/永安.html" target="_blank" class="news-card">
+        <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/490798523_1231080232357223_3967346684302832130_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=PO3-_2NHmkYQ7kNvwHf0bKH&_nc_oc=AdnML_zRIK0WA7ZI_XV11wkqtcaW0Jwib8vMsfJtKehBcLSotX26kAhaLSTrA-l8kbw&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=8kEq5Em5nKmR8SKnxxZVtQ&oh=00_AfNmCHybYEjCfLtSXAYp3x58AO2kYeQXcpL2YdeKz7WrGQ&oe=6856F77E" alt="永安">
+        <h3>EP6 石碇永安社區<br>沉於翡翠水庫下的記憶</h3></a>
+    <a href="https:/109405088.github.io/乞龜.html
+    " target="_blank" class="news-card">
+        <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/492002913_1231385478993365_5897594770966377656_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=lnB7hk-BnbUQ7kNvwGtIY4p&_nc_oc=AdmwTjdjypu37s3HfYSFWklNSj4RYDdN2lOyzcNKN1dUWHe4Nyr2l0YZkKBRb0yYTQM&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=XM4SHU0-EsZPvkb40IvmGw&oh=00_AfN3R6VcvX4poVCgfX4ls6E0kM5yxPPMNj41Auo0YRL90w&oe=6856FF1C" alt="乞龜">
+        <h3>EP7 澎湖元宵乞龜文化<br>一人疊龜的好功夫</h3></a>
+    <a href="https://109405088.github.io/辦桌.html" target="_blank" class="news-card">
+     <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/492492635_1237094355089144_7151549386423630798_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=fs3AwbBA7ZYQ7kNvwH0TGoj&_nc_oc=AdnsAlHEQZrktk9D_7IzwV8HkQ1K2XQ3k-sCSnVhafqy-FsRgSMfgLdn09RWJuHiTYo&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=215-tPB7XUGwaveo5UGNQA&oh=00_AfMxMcXBEBZv0jqaV5iDo4KRp2gcGeHvS5Ivsb7hElFf_w&oe=6856DAD3" alt="辦桌">
+     <h3>EP12 三兄弟齊心經營<br>傳承阿爸辦桌精神</h3></a>
+     <a href="https://109405088.github.io/關麥.html" target="_blank" class="news-card">
+        <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/503610496_3425091534313270_2142850990434035724_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=i-urW97I3NIQ7kNvwH_-TO3&_nc_oc=Adn6s9A01pRuDH6Xjx3C6wk_LjwT4AhNlFwPfwhs5WkLIS-mz3ihWCdzQ8oSYw9MUHA&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=7EqYdSdOVL6y9JN_hrI6Aw&oh=00_AfPXb5JB-Rxjxbj2U00QvIFqeWfKN51J_DZZ64U3IHtwNw&oe=6856EDBA" alt="澎湖">
+        <h3>EP13 趕緊來聽！<br>澎湖囡仔講澎湖</h3></a>  
+  </div>
+</body>
+</html>
